@@ -17,6 +17,17 @@ lines = [
 	'(* a a)',
 	'(/ a a)',
 	'(* a a (/ a a))',
+	'(defvar a)',
+	'(a)',
+	'(defvar)',
+	'(defvar fn (lambda (a b) (+ 1 2)))',
+	'(fn 1 2)',
+	'(defvar fn (lambda (a b) (+ a b)))',
+	'(fn 5 7)',
+	'(defun fancy-fun (a b) (+ a b))',
+	'(fancy-fun 5 7)',
+	'(car 1 2 3 4)',
+	'(cdr 1 2 3 4)',
 ];
 
 for(var i=0,l=lines.length;i<l;i++)

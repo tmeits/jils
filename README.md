@@ -1,13 +1,13 @@
 # jils
-## Another common lisp implementation
+## Another lisp implementation
 
-This project is aimed to implement commonlisp (CL) in javascript. 
+This project is aimed to implement a lisp dialect in javascript. 
 
 ### Things to do:
-* setf
-* defun
+* if 
+* nil?
+* #t, #f
 * concat
-* car
-* cdr
 * cond
 * let
+* macros
