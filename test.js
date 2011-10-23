@@ -28,6 +28,16 @@ lines = [
 	'(fancy-fun 5 7)',
 	'(car 1 2 3 4)',
 	'(cdr 1 2 3 4)',
+	'(begin (+ 1 2) (+ 2 3) (+ 3 4))',
+	'(cond true "cond-true" "cond-false")',
+	'(cond (nil? null) "cond-true" "cond-false")',
+	'(cond (nil? true) "cond-true" "cond-false")',
+	'(cond (eq? "abc" "abc") "cond-true" "cond-false")',
+	'(cond (eq? "abc" "cba") "cond-true" "cond-false")',
+	'(cond (list? (1 2 3)) "cond-true" "cond-false")',
+	'(cond (list? (car 1 2 3)) "cond-true" "cond-false")',
+	'(cond (list? (cdr 1 2 3)) "cond-true" "cond-false")',
+	'(cond (list? "abc") "cond-true" "cond-false")',
 ];
 
 for(var i=0,l=lines.length;i<l;i++)
