@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+
+var parse = require('../lib/parse'),
+	stdin = process.openStdin();
+
+stdin.setEncoding('utf8');
+
+var input = '';
+stdin.on('data', function (chunk) {
+	input += chunk.toString();
+});
+
+stdin.on('end', function () {
+	console.log(parse(input));
+	process.exit(0);
+});

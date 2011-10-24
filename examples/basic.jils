@@ -1,0 +1,3 @@
+(begin
+	(defun log (msg) (console.log msg))
+	(log (1 2 3 4)))

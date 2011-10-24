@@ -1,4 +1,5 @@
 {
 	"name" : "jils",
-	"main" : "./repl.js" 
+	"main" : "./repl.js",
+  	"bin": { "jils": "./bin/jils" },
 }
